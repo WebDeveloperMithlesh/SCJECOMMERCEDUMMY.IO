@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{ 
+    /* Background Color */
+    --bg-danger:#f63440;
+    --bg-white:#fff;
+    --bg-light-white:#f5f5f5;
+
+    /* Text Color */
+    --primary-font:"Poppins", sans-serif;
+    --text-white:#fff;
+    --text-black:#121212; 
+    --text-danger:#f63440; 
+    --text-gray:#aaa;
+    --text-dark-gray:#777;
+}  
+body {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    background:var(--bg-white);
+    color: var(--text-black);
+    overflow-x:hidden;
+} 
+
+/* Custom CSS */
+a,
+a:hover{
+    text-decoration: none;
+}
+p{
+    margin:0;
+}
+.btn-danger{
+    background:var(--bg-danger);
+    border-color:var(--bg-danger);
+    padding:0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn-danger:hover{
+    color:var(--text-danger);
+    background:transparent; 
+}
+
+
+/* Navigation CSS */ 
+#header .fixed-top{
+    box-shadow: 0 0.125rem 0.675rem rgb(0 0 0 / 5%);
+}
+#header .navbar-nav .nav-item .nav-link{
+    color:var(--text-white);
+    padding:0.5rem .5rem;
+    text-align: center;
+}
+#header .navbar-nav .nav-item .nav-link:hover,
+#header .navbar-nav .nav-item .nav-link.active{
+    color:var(--text-danger);
+}
+#header .navbar-toggler-icon{
+    width:unset;
+    height:unset;
+}
+#header .navbar-toggler:focus{
+    box-shadow: none;
+}
+/* Contact us */
+.contact{
+    position: relative;
+    margin-top: 15rem;
+}
+form input {
+    width: 31rem;
+    padding: .5rem;
+    margin-top: .3rem;
+}
+form input:focus{
+    outline: none;
+}
+form textarea{
+    margin-top: .3rem;
+}
+form textarea:focus{
+    outline: none;
+}
+/* Google Map */
+.google-map{
+    width: 100px;
+    height: auto;
+}
+.google-map iframe{
+    height: 60vh;
+    padding: 1rem;
+}
